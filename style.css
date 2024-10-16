@@ -1,0 +1,170 @@
+/* CSS Reset 👇 */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* CSS Styles 👇 */
+* {
+      font-family: 'Lexend Deca', sans-serif;
+    }
+    body {
+      font-size: 0.938rem;
+      display: grid; 
+      place-content: center;
+      padding-top: 160px; 
+      padding-bottom: 100px;
+      padding-left: 160px;
+      padding-right: 160px;
+    } 
+    .container {
+      display: grid; 
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .sedan {
+      background-color: hsl(31, 77%, 52%);
+      padding: 2rem;
+      border-radius: 10px 0 0 10px;
+    } 
+    .suv {
+      background-color: hsl(184, 100%, 22%); 
+      padding: 2rem;
+    } 
+    .Luxury {
+      background-color: hsl(179, 100%, 13%); 
+      padding: 2rem;
+      border-radius: 0 10px 10px 0; 
+    }
+    .head {
+      font-size: 2.375rem;
+      font-family: 'Big Shoulders Display', Cursive;
+      font-weight: 700;
+      text-transform: uppercase; 
+      color: hsl(0, 0%, 95%);
+    } 
+    .p {
+      font-weight: 400;
+      color: hsla(0, 0%, 100%, 0.75);
+      padding: 5px; 
+      padding-bottom: 12px;
+    } 
+    button {
+      border-radius: 48px; 
+      padding-top: 60px;
+      padding: 10px;
+      border: none;
+    } 
+    .sedan button:hover {
+      background-color: hsl(31, 77%, 52%); 
+      border: solid hsl(0, 0%, 95%);
+      color: hsl(0, 0%, 95%);
+    }
+    .sedan button{
+      color: hsl(31, 77%, 52%); 
+    }
+    .suv button:hover {
+      background-color: hsl(184, 100%, 22%);
+      border: solid hsl(0, 0%, 95%);
+      color: hsl(0, 0%, 95%);
+    }
+    .suv button {
+      color: hsl(184, 100%, 22%);
+    }
+    .Luxury button:hover {
+      background-color: hsl(179, 100%, 13%); 
+      border: solid hsl(0, 0%, 95%);
+      color: hsl(0, 0%, 95%);
+    }
+    .Luxury button {
+      color: hsl(179, 100%, 13%); 
+    }
+    .attribution { font-size: 0.688rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } 
+    @media (width < 768px) { 
+      .container {
+        grid-template-columns: repeat(1, 1fr); 
+    width: 30%; 
+    height: 30%;
+  } 
+  .sedan {
+    border-radius: 10px 10px 0 0;
+  }
+      .Luxury {
+        border-radius: 0 0 10px 10px;
+      }
+} 
+    @media (width >= 768px) {
+    .container {
+    width: 100%; 
+    height: 100%;
+  }
+    }
