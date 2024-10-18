@@ -78,25 +78,30 @@ select {
   font-family: "Lexend Deca", sans-serif;
 }
 body {
-  font-size: 0.938rem;
+  font-size: 0.9375rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .card {
-  background-color: red;
+   background-color: red; 
   display: flex;
   flex-direction: column;
-  border-radius: 1em;
+  border-radius: 10px;
   margin: auto; 
   max-width: 20rem;
-  padding: auto;
-  text-align: start;
+}
+.car {
+  padding: 30px 50px; 
+  text-align: left;
   align-items: start;
 }
-
 .sedan {
-  background-color: hsl(31, 77%, 52%);
+   background-color: hsl(31, 77%, 52%); 
+   border-radius: 10px;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0; 
+   
 }
 
 .suv {
@@ -104,33 +109,28 @@ body {
 }
 .Luxury {
   background-color: hsl(179, 100%, 13%);
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-left-radius: 0; 
 } 
-h1 {
+h2 {
+  font-size: 2rem;
   font-family: "Big Shoulders Display", Cursive;
   font-weight: 700;
   text-transform: uppercase;
   color: hsl(0, 0%, 95%);
+  padding: 20px 0;
 }
 p {
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
-  padding: 9px;
 }
-h1,
- p
- {
-  margin: 0.7em;
-  padding: 0.9em;
-}
-img {
-  padding: 6px;
-  margin: 0.3em;
-}
+
 button {
   border-radius: 8em;
   border: none; 
-  padding: 0.9em;
-  margin: 1em;
+  padding: 20px 30px;
+  margin-top: 6em;
 }
 .sedan button:hover {
   background-color: hsl(31, 77%, 52%);
@@ -167,6 +167,6 @@ button {
   .card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 60rem;
+    max-width: 63rem;
   }
  }
