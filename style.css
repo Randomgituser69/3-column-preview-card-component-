@@ -92,16 +92,17 @@ body {
   max-width: 20rem;
 }
 .car {
-  padding: 30px 50px; 
+  overflow: hidden;
+  padding: 38px 50px; 
   text-align: left;
   align-items: start;
 }
 .sedan {
    background-color: hsl(31, 77%, 52%); 
-   border-radius: 10px;
+  /* border-radius: 10px;
    border-top-right-radius: 0;
    border-bottom-right-radius: 0; 
-   
+   */
 }
 
 .suv {
@@ -109,9 +110,9 @@ body {
 }
 .Luxury {
   background-color: hsl(179, 100%, 13%);
-  border-radius: 10px;
+ /* border-radius: 10px;
   border-top-left-radius: 0;
-  border-top-left-radius: 0; 
+  border-top-left-radius: 0; */
 } 
 h2 {
   font-size: 2rem;
@@ -126,34 +127,35 @@ p {
   color: hsla(0, 0%, 100%, 0.75);
 }
 
-button {
+.card a {
+  background-color: white;
+  text-decoration: none;
   border-radius: 8em;
   border: none; 
   padding: 20px 30px;
-  margin-top: 6em;
 }
-.sedan button:hover {
-  background-color: hsl(31, 77%, 52%);
+.sedan a:hover {
+  background-color: transparent;
   border: solid hsl(0, 0%, 95%);
   color: hsl(0, 0%, 95%);
 }
-.sedan button {
+.sedan a {
   color: hsl(31, 77%, 52%);
 }
-.suv button:hover {
-  background-color: hsl(184, 100%, 22%);
+.suv a:hover {
+  background-color: transparent;
   border: solid hsl(0, 0%, 95%);
   color: hsl(0, 0%, 95%);
 }
-.suv button {
+.suv a {
   color: hsl(184, 100%, 22%);
 }
-.Luxury button:hover {
-  background-color: hsl(179, 100%, 13%);
+.Luxury a:hover {
+  background-color: transparent;
   border: solid hsl(0, 0%, 95%);
   color: hsl(0, 0%, 95%);
 }
-.Luxury button {
+.Luxury a{
   color: hsl(179, 100%, 13%);
 }
 .attribution {
