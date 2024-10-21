@@ -84,37 +84,38 @@ body {
   justify-content: center;
 }
 .card {
-   background-color: red; 
+  background-color: white;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   border-radius: 10px;
-  margin: auto; 
+  margin: auto;
+  margin-top: 1em;
   max-width: 20rem;
 }
+
 .car {
-  overflow: hidden;
-  padding: 38px 50px; 
+  padding: 25px 20px;
   text-align: left;
   align-items: start;
 }
 .sedan {
-   background-color: hsl(31, 77%, 52%); 
-  /* border-radius: 10px;
-   border-top-right-radius: 0;
-   border-bottom-right-radius: 0; 
-   */
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(31, 77%, 52%);
 }
 
 .suv {
+  display: flex;
+  flex-direction: column;
   background-color: hsl(184, 100%, 22%);
 }
 .Luxury {
+  display: flex;
+  flex-direction: column;
   background-color: hsl(179, 100%, 13%);
- /* border-radius: 10px;
-  border-top-left-radius: 0;
-  border-top-left-radius: 0; */
-} 
-h2 {
+}
+.card h2 {
   font-size: 2rem;
   font-family: "Big Shoulders Display", Cursive;
   font-weight: 700;
@@ -122,17 +123,20 @@ h2 {
   color: hsl(0, 0%, 95%);
   padding: 20px 0;
 }
-p {
+.card p {
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 3em;
 }
 
 .card a {
+  display: inline-block;
   background-color: white;
   text-decoration: none;
   border-radius: 8em;
-  border: none; 
+  border: none;
   padding: 20px 30px;
+  margin-top: 2em;
 }
 .sedan a:hover {
   background-color: transparent;
@@ -155,7 +159,7 @@ p {
   border: solid hsl(0, 0%, 95%);
   color: hsl(0, 0%, 95%);
 }
-.Luxury a{
+.Luxury a {
   color: hsl(179, 100%, 13%);
 }
 .attribution {
@@ -165,10 +169,13 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
- @media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 37.5rem) {
   .card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 0 195px;
+    margin-top: 1em;
+    margin-bottom: 1em;
     max-width: 63rem;
   }
- }
+}
